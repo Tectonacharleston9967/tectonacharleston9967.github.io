@@ -1,6 +1,6 @@
-/* =========================================
+/* ==================================================
    RESET
-========================================= */
+================================================== */
 
 * {
     margin: 0;
@@ -16,95 +16,122 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+
     background: #f5f6f7;
-    color: #15191d;
+
+    color: #171b1f;
+
     line-height: 1.6;
 }
 
 
 a {
     color: inherit;
+
     text-decoration: none;
 }
 
 
 img {
     max-width: 100%;
+
     display: block;
 }
 
 
-/* =========================================
+
+/* ==================================================
    NAVIGATION
-========================================= */
+================================================== */
 
 .navbar {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     background: rgba(245, 246, 247, 0.96);
 
-    border-bottom: 1px solid #d9dde1;
+    border-bottom: 1px solid #d8dde1;
 }
 
 
 .nav-container {
+
     max-width: 1200px;
+
     margin: auto;
 
     padding: 18px 30px;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
 
 
 .logo {
+
     font-size: 20px;
+
     font-weight: 800;
+
     letter-spacing: 2px;
 }
 
 
-nav {
+.nav-links {
+
     display: flex;
+
     gap: 25px;
 }
 
 
-nav a {
+.nav-links a {
+
     font-size: 13px;
-    color: #59616a;
 
-    transition: color 0.2s ease;
+    color: #606971;
+
+    transition: 0.2s ease;
 }
 
 
-nav a:hover {
+.nav-links a:hover {
+
     color: #111;
+
 }
 
 
-/* =========================================
+
+/* ==================================================
    HERO
-========================================= */
+================================================== */
 
 .hero {
+
     min-height: 88vh;
 
-    display: flex;
-    align-items: center;
+    border-bottom: 1px solid #d8dde1;
 
-    border-bottom: 1px solid #d9dde1;
+    display: flex;
+
+    align-items: center;
 
     overflow: hidden;
 }
 
 
 .hero-container {
+
     max-width: 1200px;
+
     width: 100%;
 
     margin: auto;
@@ -113,7 +140,7 @@ nav a:hover {
 
     display: grid;
 
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1fr 1fr;
 
     gap: 70px;
 
@@ -122,21 +149,24 @@ nav a:hover {
 
 
 .overline {
+
     font-size: 11px;
+
     font-weight: 700;
 
     letter-spacing: 3px;
 
-    color: #6c747c;
+    color: #707981;
 
     margin-bottom: 20px;
 }
 
 
 .hero h1 {
+
     font-size: clamp(60px, 8vw, 105px);
 
-    line-height: 0.92;
+    line-height: 0.9;
 
     letter-spacing: -5px;
 
@@ -147,17 +177,19 @@ nav a:hover {
 
 
 .hero h2 {
+
     font-size: clamp(25px, 3vw, 40px);
 
     font-weight: 400;
 
-    color: #4e565e;
+    color: #4d565e;
 
     margin-bottom: 25px;
 }
 
 
 .hero-description {
+
     max-width: 650px;
 
     color: #68717a;
@@ -169,6 +201,7 @@ nav a:hover {
 
 
 .hero-buttons {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -180,266 +213,175 @@ nav a:hover {
 
 
 .button {
+
     padding: 12px 20px;
 
     font-size: 13px;
 
-    border: 1px solid #15191d;
+    border: 1px solid #171b1f;
 
     transition: 0.2s ease;
 }
 
 
 .button-dark {
-    background: #15191d;
+
+    background: #171b1f;
 
     color: white;
 }
 
 
 .button-outline {
+
     background: transparent;
 }
 
 
 .button:hover {
+
     transform: translateY(-2px);
 }
 
 
 .hero-links {
+
     display: flex;
 
     gap: 25px;
 
     font-size: 13px;
 
-    color: #59616a;
+    color: #606971;
 }
 
 
 .hero-links a:hover {
-    color: #111;
 
     text-decoration: underline;
+
 }
 
 
-/* =========================================
-   AIRCRAFT TECHNICAL VISUAL
-========================================= */
 
-.aircraft-visual {
-    min-height: 430px;
+/* ==================================================
+   HERO BANNER
+================================================== */
+
+.hero-visual {
 
     position: relative;
+
+    width: 100%;
 
     display: flex;
 
+    justify-content: center;
+
     align-items: center;
+}
+
+
+.hero-banner {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    height: auto;
+
+    object-fit: cover;
+
+    border: 1px solid #d5dade;
+
+    box-shadow: 0 20px 50px rgba(20, 25, 30, 0.08);
+}
+
+
+
+/* ==================================================
+   ENGINEERING FOCUS
+================================================== */
+
+.focus-section {
+
+    border-bottom: 1px solid #d8dde1;
+
+    background: #eceff1;
+}
+
+
+.focus-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+.focus-item {
+
+    min-height: 100px;
+
+    padding: 25px 20px;
+
+    border-right: 1px solid #d1d6da;
+
+    display: flex;
+
+    flex-direction: column;
 
     justify-content: center;
+
+    gap: 7px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #59626a;
 }
 
 
-.aircraft-drawing {
-    position: relative;
+.focus-item:last-child {
 
-    width: 430px;
-
-    height: 260px;
-
-    opacity: 0.7;
+    border-right: none;
 }
 
 
-/* fuselage */
-
-.fuselage {
-    position: absolute;
-
-    width: 390px;
-
-    height: 8px;
-
-    background: #77818a;
-
-    left: 20px;
-
-    top: 126px;
-
-    border-radius: 50%;
-}
-
-
-/* main wing */
-
-.main-wing {
-    position: absolute;
-
-    width: 310px;
-
-    height: 115px;
-
-    border-top: 1px solid #77818a;
-
-    border-bottom: 1px solid #77818a;
-
-    transform: skewX(-25deg);
-
-    left: 65px;
-
-    top: 70px;
-}
-
-
-/* tail */
-
-.tail-wing {
-    position: absolute;
-
-    width: 110px;
-
-    height: 55px;
-
-    border-top: 1px solid #77818a;
-
-    border-bottom: 1px solid #77818a;
-
-    transform: skewX(-25deg);
-
-    left: 275px;
-
-    top: 95px;
-}
-
-
-/* vertical stabilizer */
-
-.vertical-tail {
-    position: absolute;
-
-    width: 45px;
-
-    height: 65px;
-
-    border-left: 1px solid #77818a;
-
-    transform: skewX(-18deg);
-
-    left: 320px;
-
-    top: 65px;
-}
-
-
-/* center line */
-
-.center-line {
-    position: absolute;
-
-    width: 450px;
-
-    height: 1px;
-
-    border-top: 1px dashed #a2a9af;
-
-    left: -10px;
-
-    top: 130px;
-}
-
-
-/* dimensions */
-
-.dimension-line {
-    position: absolute;
-
-    color: #899198;
+.focus-number {
 
     font-size: 9px;
 
-    letter-spacing: 2px;
+    color: #929aa1;
 }
 
 
-.dimension-horizontal {
-    width: 310px;
 
-    border-top: 1px solid #aab0b5;
-
-    top: 210px;
-
-    left: 60px;
-
-    text-align: center;
-}
-
-
-.dimension-horizontal span {
-    position: relative;
-
-    top: 8px;
-}
-
-
-.dimension-vertical {
-    height: 130px;
-
-    border-left: 1px solid #aab0b5;
-
-    top: 55px;
-
-    right: 20px;
-
-    writing-mode: vertical-rl;
-
-    text-align: center;
-}
-
-
-.aircraft-label {
-    position: absolute;
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
-
-    color: #899198;
-}
-
-
-.label-top {
-    top: 25px;
-
-    left: 0;
-}
-
-
-.label-bottom {
-    bottom: 25px;
-
-    right: 0;
-}
-
-
-/* =========================================
+/* ==================================================
    GENERAL SECTIONS
-========================================= */
+================================================== */
 
 .section {
+
     padding: 110px 30px;
 
-    border-bottom: 1px solid #d9dde1;
+    border-bottom: 1px solid #d8dde1;
 }
 
 
 .section-light {
+
     background: #eceff1;
 }
 
 
 .section-container {
+
     max-width: 1200px;
 
     margin: auto;
@@ -447,6 +389,7 @@ nav a:hover {
 
 
 .section-heading {
+
     display: flex;
 
     align-items: baseline;
@@ -458,7 +401,8 @@ nav a:hover {
 
 
 .section-number {
-    font-size: 12px;
+
+    font-size: 11px;
 
     color: #8a9299;
 
@@ -467,6 +411,7 @@ nav a:hover {
 
 
 .section h2 {
+
     font-size: clamp(40px, 5vw, 62px);
 
     letter-spacing: -2px;
@@ -477,53 +422,72 @@ nav a:hover {
 }
 
 
-/* =========================================
-   ABOUT
-========================================= */
 
-.about-content {
-    max-width: 850px;
+/* ==================================================
+   ABOUT
+================================================== */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    max-width: 1050px;
 
     margin-left: auto;
 }
 
 
-.about-content p {
-    color: #646d75;
-
-    margin-bottom: 25px;
-
-    font-size: 17px;
-}
-
-
-.about-content .large-text {
-    color: #22282d;
+.about-intro p {
 
     font-size: 27px;
 
     line-height: 1.45;
+
+    color: #20262b;
 }
 
 
-/* =========================================
+.about-details {
+
+    padding-top: 5px;
+}
+
+
+.about-details p {
+
+    color: #646d75;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* ==================================================
    EXPERIENCE
-========================================= */
+================================================== */
 
 .experience-entry {
+
     display: grid;
 
     grid-template-columns: 230px 1fr;
 
     gap: 70px;
 
-    border-top: 1px solid #bfc5ca;
+    border-top: 1px solid #bdc4c9;
 
     padding-top: 35px;
 }
 
 
 .experience-meta {
+
     display: flex;
 
     flex-direction: column;
@@ -538,14 +502,28 @@ nav a:hover {
 }
 
 
-.experience-main h3 {
-    font-size: 32px;
+.technical-label {
 
-    margin-bottom: 5px;
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #808890;
+
+    margin-bottom: 10px;
+}
+
+
+.experience-main h3 {
+
+    font-size: 34px;
+
+    margin-bottom: 4px;
 }
 
 
 .experience-role {
+
     color: #6d757d;
 
     margin-bottom: 30px;
@@ -553,6 +531,7 @@ nav a:hover {
 
 
 .experience-main ul {
+
     padding-left: 20px;
 
     max-width: 800px;
@@ -560,17 +539,20 @@ nav a:hover {
 
 
 .experience-main li {
+
     margin-bottom: 13px;
 
     color: #555e66;
 }
 
 
-/* =========================================
+
+/* ==================================================
    PROJECTS
-========================================= */
+================================================== */
 
 .projects-grid {
+
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
@@ -580,6 +562,7 @@ nav a:hover {
 
 
 .project-card {
+
     background: #ffffff;
 
     border: 1px solid #d6dbe0;
@@ -592,12 +575,14 @@ nav a:hover {
 
     flex-direction: column;
 
-    transition: transform 0.2s ease,
-                border-color 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
 }
 
 
 .project-card:hover {
+
     transform: translateY(-4px);
 
     border-color: #9da5ac;
@@ -605,6 +590,7 @@ nav a:hover {
 
 
 .project-top {
+
     display: flex;
 
     justify-content: space-between;
@@ -614,6 +600,7 @@ nav a:hover {
 
 
 .project-number {
+
     font-size: 11px;
 
     letter-spacing: 2px;
@@ -623,6 +610,7 @@ nav a:hover {
 
 
 .project-category {
+
     font-size: 9px;
 
     letter-spacing: 2px;
@@ -632,6 +620,7 @@ nav a:hover {
 
 
 .project-card h3 {
+
     font-size: 29px;
 
     line-height: 1.15;
@@ -641,6 +630,7 @@ nav a:hover {
 
 
 .project-subtitle {
+
     color: #7a8289;
 
     font-size: 14px;
@@ -650,6 +640,7 @@ nav a:hover {
 
 
 .project-specs {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -661,19 +652,19 @@ nav a:hover {
 
 
 .project-specs span {
+
     background: #eef0f2;
 
     padding: 6px 9px;
 
     font-size: 10px;
 
-    letter-spacing: 0.5px;
-
     color: #5d666e;
 }
 
 
 .project-card > p:not(.project-subtitle) {
+
     color: #626b73;
 
     font-size: 14px;
@@ -683,6 +674,7 @@ nav a:hover {
 
 
 .project-tags {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -696,6 +688,7 @@ nav a:hover {
 
 
 .project-tags span {
+
     font-size: 10px;
 
     border-bottom: 1px solid #aeb5bb;
@@ -707,6 +700,7 @@ nav a:hover {
 
 
 .project-result {
+
     border-top: 1px solid #d9dde1;
 
     padding-top: 18px;
@@ -722,11 +716,13 @@ nav a:hover {
 
 
 .project-result strong {
+
     font-size: 15px;
 }
 
 
 .project-result span {
+
     font-size: 10px;
 
     color: #7b848c;
@@ -735,11 +731,13 @@ nav a:hover {
 }
 
 
-/* =========================================
+
+/* ==================================================
    SKILLS
-========================================= */
+================================================== */
 
 .section-dark {
+
     background: #15191d;
 
     color: #f3f4f5;
@@ -747,11 +745,13 @@ nav a:hover {
 
 
 .section-dark .section-number {
+
     color: #7e878f;
 }
 
 
 .skills-grid {
+
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
@@ -761,6 +761,7 @@ nav a:hover {
 
 
 .skill-group {
+
     padding: 35px 30px;
 
     border-bottom: 1px solid #3b4248;
@@ -770,11 +771,13 @@ nav a:hover {
 
 
 .skill-group:nth-child(even) {
+
     border-right: none;
 }
 
 
 .skill-label {
+
     font-size: 9px;
 
     letter-spacing: 2px;
@@ -786,6 +789,7 @@ nav a:hover {
 
 
 .skill-group h3 {
+
     font-size: 25px;
 
     margin-bottom: 12px;
@@ -793,17 +797,20 @@ nav a:hover {
 
 
 .skill-group p:not(.skill-label) {
+
     color: #aab1b7;
 
     font-size: 14px;
 }
 
 
-/* =========================================
+
+/* ==================================================
    ACHIEVEMENTS
-========================================= */
+================================================== */
 
 .achievement-list {
+
     max-width: 950px;
 
     margin-left: auto;
@@ -811,6 +818,7 @@ nav a:hover {
 
 
 .achievement-item {
+
     display: grid;
 
     grid-template-columns: 60px 1fr;
@@ -824,6 +832,7 @@ nav a:hover {
 
 
 .achievement-place {
+
     color: #8a9299;
 
     font-size: 11px;
@@ -833,22 +842,26 @@ nav a:hover {
 
 
 .achievement-item strong {
+
     font-size: 21px;
 }
 
 
 .achievement-item p {
+
     color: #737c84;
 
     font-size: 14px;
 }
 
 
-/* =========================================
+
+/* ==================================================
    RESEARCH
-========================================= */
+================================================== */
 
 .research-entry {
+
     max-width: 900px;
 
     margin-left: auto;
@@ -862,6 +875,7 @@ nav a:hover {
 
 
 .research-label {
+
     font-size: 9px;
 
     letter-spacing: 2px;
@@ -873,6 +887,7 @@ nav a:hover {
 
 
 .research-entry h3 {
+
     font-size: 32px;
 
     line-height: 1.2;
@@ -882,6 +897,7 @@ nav a:hover {
 
 
 .research-entry > p:not(.research-label) {
+
     color: #626b73;
 
     max-width: 750px;
@@ -889,6 +905,7 @@ nav a:hover {
 
 
 .research-status {
+
     margin-top: 30px;
 
     padding-top: 18px;
@@ -903,11 +920,13 @@ nav a:hover {
 }
 
 
-/* =========================================
+
+/* ==================================================
    CONTACT
-========================================= */
+================================================== */
 
 .contact-section {
+
     background: #15191d;
 
     color: white;
@@ -917,6 +936,7 @@ nav a:hover {
 
 
 .contact-container {
+
     max-width: 1200px;
 
     margin: auto;
@@ -924,11 +944,13 @@ nav a:hover {
 
 
 .contact-section .overline {
+
     color: #8e979e;
 }
 
 
 .contact-section h2 {
+
     font-size: clamp(50px, 7vw, 90px);
 
     line-height: 0.95;
@@ -939,7 +961,8 @@ nav a:hover {
 }
 
 
-.contact-section > .contact-container > p:not(.overline) {
+.contact-container > p:not(.overline) {
+
     max-width: 600px;
 
     color: #9da5ac;
@@ -951,6 +974,7 @@ nav a:hover {
 
 
 .contact-links {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -960,6 +984,7 @@ nav a:hover {
 
 
 .contact-links a {
+
     border-bottom: 1px solid #707981;
 
     padding-bottom: 5px;
@@ -969,15 +994,18 @@ nav a:hover {
 
 
 .contact-links a:hover {
+
     border-color: white;
 }
 
 
-/* =========================================
+
+/* ==================================================
    FOOTER
-========================================= */
+================================================== */
 
 footer {
+
     background: #15191d;
 
     border-top: 1px solid #343b41;
@@ -996,35 +1024,69 @@ footer {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+
+/* ==================================================
+   TABLET
+================================================== */
 
 @media (max-width: 900px) {
 
-    nav {
+    .nav-links {
+
         display: none;
     }
 
 
     .hero-container {
+
         grid-template-columns: 1fr;
 
-        gap: 40px;
+        gap: 50px;
+
+        padding-top: 80px;
     }
 
 
-    .aircraft-visual {
-        min-height: 300px;
+    .hero-visual {
+
+        order: 2;
+    }
+
+
+    .focus-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .focus-item {
+
+        border-bottom: 1px solid #d1d6da;
+    }
+
+
+    .focus-item:nth-child(2n) {
+
+        border-right: none;
+    }
+
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
     }
 
 
     .projects-grid {
+
         grid-template-columns: 1fr;
     }
 
 
     .experience-entry {
+
         grid-template-columns: 1fr;
 
         gap: 25px;
@@ -1033,19 +1095,27 @@ footer {
 }
 
 
+
+/* ==================================================
+   MOBILE
+================================================== */
+
 @media (max-width: 600px) {
 
     .nav-container {
+
         padding: 16px 20px;
     }
 
 
     .hero-container {
-        padding: 80px 20px;
+
+        padding: 70px 20px;
     }
 
 
     .hero h1 {
+
         font-size: 65px;
 
         letter-spacing: -3px;
@@ -1053,68 +1123,107 @@ footer {
 
 
     .hero h2 {
+
         font-size: 27px;
     }
 
 
-    .aircraft-drawing {
-        transform: scale(0.72);
+    .hero-description {
+
+        font-size: 15px;
+    }
+
+
+    .hero-banner {
+
+        width: 100%;
     }
 
 
     .section {
+
         padding: 80px 20px;
     }
 
 
     .section-heading {
+
         margin-bottom: 40px;
     }
 
 
-    .about-content .large-text {
+    .section h2 {
+
+        font-size: 42px;
+    }
+
+
+    .focus-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .focus-item {
+
+        border-right: none;
+
+        min-height: 70px;
+    }
+
+
+    .about-intro p {
+
         font-size: 22px;
     }
 
 
-    .projects-grid {
-        gap: 12px;
-    }
-
-
     .project-card {
+
         min-height: auto;
 
         padding: 25px;
     }
 
 
+    .project-card h3 {
+
+        font-size: 25px;
+    }
+
+
     .skills-grid {
+
         grid-template-columns: 1fr;
     }
 
 
     .skill-group {
+
         border-right: none;
     }
 
 
     .research-entry {
+
         padding: 28px;
     }
 
 
     .research-entry h3 {
+
         font-size: 25px;
     }
 
 
     .contact-section {
+
         padding: 90px 20px;
     }
 
 
     .contact-section h2 {
+
         font-size: 52px;
 
         letter-spacing: -2px;
@@ -1122,6 +1231,7 @@ footer {
 
 
     footer {
+
         flex-direction: column;
     }
 
